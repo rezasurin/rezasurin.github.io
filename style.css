@@ -1,1 +1,203 @@
 /* STYLING */
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  /* background-color: rgb(160, 241, 204); */
+  /* padding-bottom: 50px; */
+}
+
+
+.navbar {
+  position: fixed;
+  border-: 2px solid transparent;
+  border-radius: 30px;
+  background-color: rgb(199, 123, 53);
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 440px;
+  margin: 0px auto;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  /* -webkit-box-flex: 1;
+  flex: 1; */
+  padding: 10px 0;
+  list-style: none;
+}
+
+.navbar.activeHide {
+  height: 7px;
+  display: flex;
+  background-color: rgb(71, 71, 71);
+  justify-content: flex-end;
+  box-shadow: rgba(0, 0, 0, 0.5);
+  padding: 0px;
+  overflow-x: hidden;
+  transition: height 0.6s linear;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+}
+.navbar.activeHide ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 0;
+  transition: height 0.6s linear;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(255, 245, 238);
+  font-weight:400;
+  margin: 0px auto;
+  padding: 7px 15px;
+  font-size: 24px;
+  
+  text-transform: uppercase;
+  /* justify-content: center; */
+}
+a:hover {
+  color: rgb(8, 116, 179);
+  /* background-color: rgb(34, 43, 39); */
+}
+
+.navbar.activeHide li a {
+  opacity: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.greeting {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  /* -webkit-box-flex: 1;
+  flex: 1; */
+  padding: 10px 0;
+}
+.greeting {
+  background: url(./img/clem-onojeghuo-NT3qP7WbmzE-unsplash.jpg) no-repeat bottom center scroll;
+  height: 100vh;
+  background-size: cover;
+  color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -2;
+}
+.greeting::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.greeting h1 {
+  font-size: 60px;
+  letter-spacing: 2px;
+  word-spacing: 20px;
+  border: 2px solid wheat;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* margin: 40px auto; */
+}
+span {
+  color: rgb(199, 123, 53);
+}
+.greeting p {
+  font-size: 18px;
+}
+.greeting .click {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: rgb(241, 241, 241);
+  color: rgb(199, 123, 53);
+  border: 12px solid transparent;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 450;
+  margin-top: 10px;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.click .button:hover {
+  color: maroon;
+}
+
+.grid-menu {
+  display: flex;
+  background-image: url(./img/karl-fredrickson-TYIzeCiZ_60-unsplash.jpg);
+  height: 100vh;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -2;
+}
+
+.grid-menu .container {
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 5% 20% 100px 100px 100px auto;
+  display: grid;
+  grid-auto-flow: row;
+}
+.menu {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: rgba(165, 42, 42, 0.712);
+  text-align: center;
+  font-size: 36px;
+}
+.article1 table, th, td {
+  border: 2px solid transparent;
+  text-align: left;
+}
+th {
+  background-color: rgba(255, 255, 0, 0.795);
+  text-align: center;
+}
+.article1 {
+  grid-column: 3;
+  grid-row: 3;
+  background-color: rgba(255, 242, 242, 0.75);
+}
+.article2 {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+/* footer {
+  background-color: blanchedalmond;
+  height: 30px;
+} */
