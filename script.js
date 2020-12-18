@@ -11,6 +11,6 @@ function hideNav() {
   }
 }
 
-function formOrder () {
+function openOrder () {
   // script open form
 }

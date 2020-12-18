@@ -10,13 +10,13 @@
 </head>
 
 <body>
-  <header class="header">
-    <section>
+  <header>
+    <section id="header">
       <div class="navbar">
         <nav class="container">
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Reservation</a></li>
+            <li><a href="#cafe-menu">Our Speciality</a></li>
             <li><a href="#">About</a></li>
           </ul>
         </nav>
@@ -29,24 +29,26 @@
           </p>
           <br><br><br>
           <p class="click">CLICK HERE TO GET YOUR COFFEE!</p>
-          <div>
-            <button class="button" >
-              Click Me
-            </button>
-          </div>
         </div>
       </div>
-      <div>
+      <div class="box-button">
+        <a href="#cafe-menu">
+          <button class="container button">
+          Click Me
+        </button>
+      </a>
       </div>
+
+
     </section>
   </header>
 
   <main">
-    <section class="grid-menu">
+    <section id="cafe-menu" class="grid-menu">
       <!-- Backgroung image container -->
-      <div>
+      <!-- <div>
 
-      </div>
+      </div> -->
       <!-- artikel -->
       <div class="container">
         <article class="menu">
@@ -61,22 +63,81 @@
               <th>Price</th>
             </tr>
             <tr>
-              <td>Americano</td>
+              <td>items1</td>
               <td>20k</td>
-              <td>Cafe Late</td>
+              <td>items2</td>
               <td>25k</td>
             </tr>
             <tr>
-              
+              <td>items3</td>
+              <td>20k</td>
+              <td>items4</td>
+              <td>25k</td>
             </tr>
             <tr>
-              <td>tes</td>
+              <td>items5</td>
+              <td>20k</td>
+              <td>items6</td>
+              <td>25k</td>
             </tr>
           </table>
         </article>
-        <!-- <article class="article2">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit iusto repellat atque, enim iure sed dolorum, modi accusamus nostrum, veritatis autem. Accusamus, rem cum! Assumenda vel sequi itaque architecto. Doloribus.</p>
-        </article> -->
+        <article class="main-box">
+          <!-- <div class="article2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit iusto repellat atque, enim iure sed dolorum, modi accusamus nostrum, veritatis autem. Accusamus, rem cum! Assumenda vel sequi itaque architecto. Doloribus.</p>
+          </div> -->
+          <div class="box-nest">
+            <a href="#popup1">
+              <button class="order-button">
+              Click Me to Order
+              </button>
+            </a>
+          </div>
+          <div id="popup1" class="overlay">
+            <div class="popup">
+              <h2>Please input your order</h2>
+              <a class="close" href="#cafe-menu">submit</a>
+              <div class="form-container">
+                <form>
+                  <div class="form-control">
+                    <table>
+                      <tr>
+                        <th>itemName</th>
+                        <th>quantity</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox">
+                          <label for="">items1</label>
+                          <input type="checkbox">
+                          <label for="">items2</label>
+                          <input type="checkbox">
+                          <label for="">items3</label>
+                          <input type="checkbox">
+                          <label for="">items4</label>
+                          <input type="checkbox">
+                          <label for="">items5</label>
+                        </td>
+                        <td>
+                          <input type="number" required>
+                          <label for=""></label>
+                          <input type="number" required>
+                          <label for=""></label>
+                          <input type="number" required>
+                          <label for=""></label>
+                          <input type="number" required>
+                          <label for=""></label>
+                          <input type="number" required>
+                          <label for=""></label>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
       <div>
         <!-- <img src=""> -->
@@ -85,7 +146,7 @@
   </main>
 
   <footer>
-
+    contact us on 0888123
   </footer>
   <script src="./script.js"></script>
 </body>
